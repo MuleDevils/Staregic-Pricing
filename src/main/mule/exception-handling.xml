@@ -13,7 +13,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 		<logger level="INFO" doc:name="Logger" doc:id="f82deaa8-519c-4633-942a-3e29e7362be4" message="#[payload]"/>
 		<error-handler >
 			<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="5eccae11-e6ba-4597-a0c2-d32fd18668f1" >
-				<logger level="INFO" doc:name="Logger" doc:id="9dd3a662-b8b6-43f1-a646-efd97003ad4b" message="#[payload]"/>
+				<logger level="DEBUG" doc:name="Logger" doc:id="9dd3a662-b8b6-43f1-a646-efd97003ad4b" message="#[payload]"/>
 			</on-error-continue>
 		</error-handler>
 	</flow>
