@@ -10,7 +10,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="exception-handlingFlow" doc:id="5fb2891c-a7c2-4611-8d40-7f580aa7d63d" >
 		<http:listener doc:name="Listener" doc:id="46222958-1781-4bbe-bf5c-3df8cada0f99" config-ref="HTTP_Listener_config" path="/hello"/>
 		<set-payload value='#["Hello MuleSoft"]' doc:name="Set Payload" doc:id="829ed1b7-f288-4170-89ea-754d966fb6d3" />
-		<set-variable value="#[payload]" doc:name="Set Variable" doc:id="1e24215d-d7e8-4c37-b0b2-2ae9eaca0d20" variableName="pay"/>
+		<set-variable value="#[payload]" doc:name="set payload" doc:id="1e24215d-d7e8-4c37-b0b2-2ae9eaca0d20" variableName="pay"/>
 		<logger level="INFO" doc:name="Logger" doc:id="f82deaa8-519c-4633-942a-3e29e7362be4" message="#[payload]"/>
 		<error-handler >
 			<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="5eccae11-e6ba-4597-a0c2-d32fd18668f1" >
